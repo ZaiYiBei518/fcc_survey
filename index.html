@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Pizza Survey</h1>
+    <p id="description">Thank you for providing your feedback. Your opinion is valuable to us.</p>
+    <form id="survey-form">
+      <fieldset id="section1">
+       <label id="name-label">Name<input id="name" type="text" name="name" placeholder="Enter your name here pal" required/></label>
+       <label id="email-label">E-mail<input id="email" type="email" placeholder="and your e-mail wiseguy"required/</label>
+       <label id="number-label">Age (Optional)<input id="number" type="number" min="5" max="300" placeholder="Your age"></label>
+    <label>How often do you eat pizza?
+      <select id="dropdown">
+         <option>select one</option>
+         <option>Everyday</option>
+         <option>Almost everyday</option>
+       </select>
+       </label>
+      </fieldset>
+      <fieldset id="section2"></fieldset>
+      <label id="radiobuttons">
+        Do you love pizza?
+        <input type="radio" name="lovepizza" value="1"> Yes, of course</input>
+        <input type="radio" name="lovepizza" value="2"> No, I'm a weirdo</input>
+      </label>
+      <fieldset id="section3">
+        <label>
+          Choose your favorite toppings
+          <input type="checkbox" value="p">Pepperoni</input>
+          <input type="checkbox" value="g">Gabagool</input>
+          <input type="checkbox" value="gp">Ghost Pepper</input>
+          <input type="checkbox" value="exm">Extra Mozza</input>
+          <input type="checkbox" value="rs">Raw Snails</input>
+        </label>
+      </fieldset>
+      <feildset id="section4">
+        <label> Dedicate a poem to pizza
+          <textarea rows="3" cols="30" placeholder="Ode to thy brick oven"></textarea>
+        </label>
+        <label>
+          Publish here <input id ="submit" type="submit"></input>
+        </label>
+      </fieldset>
+    </form>
+  </body>
